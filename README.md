@@ -4,7 +4,12 @@ Node.js microservice for reflect data from open IP API cervices.
 
 ## Usage
 
-Run:
+Clone proect and run:
+```
+npm instrall
+```
+
+Run server:
 ```
 node app.js
 ```
