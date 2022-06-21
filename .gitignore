@@ -1,0 +1,12 @@
+.idea
+.DS_STORe
+
+.env
+.npm
+.cache
+
+dist
+build
+node_modules
+npm-debug.log
+
