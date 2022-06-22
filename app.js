@@ -8,9 +8,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 const port = process.env.PORT || "8000";
 
+// Reflection link
+// Example usage:
+// curl http://127.0.0.1:8000/\?ip=1.1.1.1
 app.get('/reflect', function(req, res){
-    // curl http://127.0.0.1:8000/\?ip=54.38.158.34
-
+    
     var data = []
     var ip = req.query.ip;
     console.log(ip);
@@ -25,14 +27,12 @@ app.get('/reflect', function(req, res){
 
 });
 
+// Home page
 app.get('/', function(req, res){
-    // curl http://127.0.0.1:8000/\?ip=54.38.158.34
-
     res.send(`Welcome to IP Reflector. `)
-
 });
 
-
+// App runner
 app.listen(port, () => console.log(`Server started at port: ${port}!`));
 
 
